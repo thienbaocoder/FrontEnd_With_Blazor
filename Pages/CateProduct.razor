@@ -1,0 +1,27 @@
+@page "/category/{categoryId}/{productId}"
+@layout HomeMasterPage
+
+
+<div class="container">
+    <h3>
+        /laptop/@categoryId/@productId
+    </h3>
+
+    <a href="/category/laptop/laptop-1">Laptop 1</a>
+    <a href="/category/laptop/laptop-2">Laptop 2</a>
+    <a href="/category/tablet/tablet-1">tablet 1</a>
+    <a href="/category/tablet/tablet-2">tablet 2</a>
+
+</div>
+
+
+@code {
+    [Parameter]
+    public string categoryId { get; set; }
+
+    [Parameter]
+    public string productId { get; set; }
+
+
+
+}

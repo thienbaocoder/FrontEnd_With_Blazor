@@ -1,0 +1,26 @@
+@page "/two-way-binding"
+@layout HomeMasterPage
+
+@{
+    int total = quantity * price;
+}
+
+<div class="container">
+    <h3>Twoway binding</h3>
+    <h3>Product info</h3>
+    <input id="price" @bind="price" placeholder="input price" class="w-25 d-inline" @oninput="@(e => HandleInput(e,"price") )"/>
+    <input id="quantity" @bind="quantity" placeholder="input quantity" class="w-25 d-inline ms-2" @oninput="@(e => HandleInput(e,"quantity"))"/>
+    <h3>Total: @total</h3>
+</div>
+
+@code {
+    private int price = 0;
+    private int quantity = 0;
+    void HandleInput(ChangeEventArgs e,string id) {
+        if(id =="price"){
+            price = int.Parse(e.Value?.ToString());
+        }else {
+            quantity = int.Parse(e.Value?.ToString());
+        }
+    }
+}

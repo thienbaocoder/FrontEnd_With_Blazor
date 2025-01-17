@@ -1,0 +1,85 @@
+@page "/handle-event"
+@layout HomeMasterPage
+<div class="container">
+    <h3>Handle event</h3>
+    <h5>Ví dụ 1: Bấm vào button sẽ đổi màu xanh thành đỏ </h5>
+    @* <button class="@classNameButton" @onclick="handleChangeColorButton">ON</button> *@
+    @{
+        if(status){
+            <button class="btn btn-success" @onclick="handleChangeColorButton">ON</button>
+        }else {
+            <button class="btn btn-danger" @onclick="handleChangeColorButton">OFF</button>
+        }
+    }
+    <h3>Ví dụ 2: Xử lý nhập liệu và hiển thị</h3>
+    @{
+        //Xử lý trên view
+        int total = quantity * price;
+        string fontSize = $"{fSize}px";
+    } 
+    <label>Thông tin sản phẩm:</label>
+    <input id="quantity" class="w-25 form-control d-inline" placeholder="Nhập vào số lượng" type="number" value="@quantity" @oninput="handlechangeQuantity" />
+    <input id="price" class="w-25 form-control ms-2 d-inline"  placeholder="Nhập vào giá" type="number" value="@price"  @oninput="handleChangePrice"/>
+    <h3 class="mt-2">Tổng tiền:  @total </h3>
+    <br />
+    <h3>Tăng giảm font chữ</h3>
+    <p style="font-size:@fontSize;">Lorem ipsum dolor sit amet.</p>
+    <button class="btn btn-dark me-2" @onclick="e =>  handleChangeSize(1) ">Zoom in</button>
+    <button class="btn btn-dark me-2" @onclick="e =>  handleChangeSize(-1) ">Zoom out</button>
+    <h3>Tinder app</h3>
+    <div class="w-25">
+        <div class="card">
+            <img src="@person.image" alt="..." />
+            <div class="card-body">
+                <p class="card-title">Name: @person.Name </p>
+                <p class="card-text">Age: @person.Age</p>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-danger" @onclick="handleChangePerson"><i class="fa fa-heart"></i> Random</button>
+            </div>
+        </div>
+    </div>
+</div>
+@code {
+    private string classNameButton {get;set;} = "btn btn-success";
+    private bool status {get;set;} = false; //false off, true in
+    private int quantity {get;set;} = 0;
+    private int price {get;set;} = 0;
+    private double fSize = 17;
+
+    private PersonViewModel person = new PersonViewModel();
+    private void handleChangeSize(int value){
+        fSize += value;
+    } 
+
+    private void handleChangeColorButton() {
+        //Xử lý thay đổi state
+        //Console.WriteLine("Clicked");
+        //classNameButton = "btn btn-danger";
+        status = !status;
+    }
+    void handlechangeQuantity (ChangeEventArgs e) {
+        quantity = Convert.ToInt16((string) e.Value);
+    }
+    void handleChangePrice (ChangeEventArgs e) {
+        price = Convert.ToInt16((string) e.Value);
+    }
+
+    void handleChangePerson() {
+        List<PersonViewModel> lstPerson = new List<PersonViewModel>();
+        PersonViewModel per1 = new PersonViewModel(2,"Nguyễn Thị B",20);
+        PersonViewModel per2 = new PersonViewModel(3,"Nguyễn Thị C",25);
+        PersonViewModel per3 = new PersonViewModel(4,"Nguyễn Thị B",30);
+        lstPerson.Add(per1);
+        lstPerson.Add(per2);
+        lstPerson.Add(per3);
+
+        Random random = new Random();
+        int index = random.Next(0,lstPerson.Count);
+
+        person = lstPerson.ElementAt(index);
+
+    }
+
+  
+}

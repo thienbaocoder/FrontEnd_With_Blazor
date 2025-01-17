@@ -1,0 +1,12 @@
+
+@inject CountService countSer;
+<button class="btn btn-success" @onclick="HandleChangeNumber">+</button>
+
+
+
+@code {
+
+    void HandleChangeNumber() {
+        countSer.InCrease();
+    }
+}

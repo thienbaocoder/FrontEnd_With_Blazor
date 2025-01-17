@@ -1,0 +1,31 @@
+<div class="card">
+    <img src="https://i.pravatar.cc?u=10" alt="..." />
+    <div class="card-body">
+        <h3 class="card-text">Name:alt Nga</h3>
+        <p class="card-text">Age: 10</p>
+        <button class="btn btn-primary" @onclick="e=>handleLikeDislike(true)">
+            @like <i class="fa fa-thumbs-up"></i>
+        </button>
+        <button class="btn btn-dark" @onclick="e=>handleLikeDislike(false)">
+            @dislike <i class="fa fa-thumbs-down"></i>
+        </button>
+    </div>
+</div>
+
+@code {
+    public int like { get; set; } = 1;
+    public int dislike { get; set; } = 1;
+    public void handleLikeDislike(bool condition)
+    {
+        if (condition)
+        {
+            like += 1;
+        }
+        else
+        {
+            dislike += 1;
+        }
+        //Cập nhật lại giao diện
+        StateHasChanged();
+    }
+}

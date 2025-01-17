@@ -1,0 +1,28 @@
+@page "/ref-demo"
+@layout HomeMasterPage
+<div class="container">
+    <div class="w-25">
+        <PersonCard @ref="tagPersonCard" />
+        <PersonCard @ref="tagPersonCard1" />
+
+        <button class="btn btn-primary" @onclick="handleLike">Like</button>
+        <button class="btn btn-primary" @onclick="handleDislike">Dislike</button>
+
+
+    </div>
+</div>
+
+
+
+@code {
+    public PersonCard tagPersonCard { get; set; }
+    public PersonCard tagPersonCard1 { get; set; }
+    void handleLike()
+    {
+        tagPersonCard.handleLikeDislike(true);
+    }
+    void handleDislike()
+    {
+        tagPersonCard1.handleLikeDislike(false);
+    }
+}

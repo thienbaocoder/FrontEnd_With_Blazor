@@ -1,0 +1,42 @@
+﻿@page "/"
+@layout HomeMasterPage
+@inject IJSRuntime js;
+@inject ProductService prdService;
+
+<div class="container">
+    <h3>CyberSoft Store</h3>
+    <div class="row">
+        @foreach (ProductVM item in prdService.lstProduct)
+        {
+            <div class="col-md-3 mt-2">
+                <div class="card">
+                    <img src="@item.Image" alt="..." />
+                    <div class="card-body">
+                        <h3 class="card-title">@item.Name</h3>
+                        <p>@item.Price</p>
+                        <a href="/detail-product/@item.Id" class="btn btn-dark">
+                            View detail
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+
+    protected override async Task OnInitializedAsync()
+    {
+        //Cài đặt sự kiện load lại giao diện
+        prdService.OnChange += StateHasChanged;
+        //Gọi api để thay đổi state lstProduct trong service
+        prdService.GetAllProductApi();
+    }
+
+    public void Dispose()
+    {
+        prdService.OnChange -= StateHasChanged;
+
+    }
+}

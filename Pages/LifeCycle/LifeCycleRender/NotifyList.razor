@@ -1,0 +1,30 @@
+@foreach (string item in lstNotify)
+{
+    <div class="p-3 border border-default d-flex justify-content-between">
+        <p class="w-75">@item</p>
+        <button class="btn btn-danger">Dismiss</button>
+    </div>
+
+}
+
+
+
+@code {
+    [Parameter]
+    public List<string> lstNotify { get; set; } = new List<string>();
+    public List<string> lstNotifyCopy { get; set; } = new List<string>();
+    protected override bool ShouldRender()
+    {
+        //Nếu list copy mà khác lstNotify => lstNotify đã bị thay đổi nên cần render lại giao diện
+        if (!Enumerable.SequenceEqual(lstNotify, lstNotifyCopy))
+        {
+            lstNotifyCopy = new List<string>(lstNotify);
+            return true;
+        }
+        return false;
+    }
+    protected override void OnAfterRender(bool firstRender)
+    {
+        Console.WriteLine($"Component notify render, first render: {firstRender}");
+    }
+}

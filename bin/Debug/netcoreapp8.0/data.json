@@ -1,0 +1,101 @@
+[
+  {
+    "id": "",
+    "name": "san pham 1",
+    "price": "2000",
+    "img": "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "description": "demo description",
+    "type": "APPLE",
+    "deleted": false
+  },
+  {
+    "id": "05dc2df8-4ada-4481-a0b4-aed5ae9eda3c",
+    "name": "Sam Sang 114",
+    "price": "20",
+    "img": "https://i.pravatar.cc?img=3",
+    "description": "fkádk fádj faiewj fi jăioe jfơi jfádlk",
+    "type": "string",
+    "deleted": false
+  },
+  {
+    "id": "1140a71e-613a-4382-a5dc-8fcb756955ba",
+    "name": "huysd",
+    "price": "123123",
+    "img": "https://i.pavatar.cc?img=10",
+    "description": "dddddddddddddddddddddddddddddddd",
+    "type": "string",
+    "deleted": false
+  },
+  {
+    "id": "1918375d-47b0-4c0d-adb0-8a56732450cd",
+    "name": "Sang Sumg 115",
+    "price": "30",
+    "img": "https://i.pravatar.cc?img=4",
+    "description": "fkjádlf jádio fjádio fjádl",
+    "type": "string",
+    "deleted": false
+  },
+  {
+    "id": "2a3c6891-cd50-402c-ae7d-5a18d0bf8e99",
+    "name": "iPhone 17 2025",
+    "price": null,
+    "img": "https://i.pavatar.cc?img=1",
+    "description": "toi yeu iphone toi yeu iphone toi yeu iphone toi yeu iphone toi yeu iphone toi yeu iphone toi yeu iphone toi yeu iphone toi yeu iphone ",
+    "type": "string",
+    "deleted": false
+  },
+  {
+    "id": "2e65d4ee-37cb-49aa-8d27-73c6aba2fec9",
+    "name": "fdsfdfsdfsdf",
+    "price": null,
+    "img": "https://i.pavatar.cc?img=1",
+    "description": "",
+    "type": "string",
+    "deleted": false
+  },
+  {
+    "id": "3c56e70f-97b0-4584-b26f-506fc1d48e1d",
+    "name": "iphone love samsung",
+    "price": null,
+    "img": "https://i.pravatar.cc/?img=2",
+    "description": "i love all",
+    "type": "string",
+    "deleted": false
+  },
+  {
+    "id": "527e86b2-d46f-4fde-9b98-2151fa0bd082",
+    "name": "Sam Sung 112",
+    "price": "112",
+    "img": "https://i.pravatar.cc?img=2",
+    "description": "Các mã trạng thái này giúp trình duyệt",
+    "type": "string",
+    "deleted": false
+  },
+  {
+    "id": "9991",
+    "name": "ssp11",
+    "price": "2000",
+    "img": "https://picsum.photos/200/300",
+    "description": "string",
+    "type": "string",
+    "deleted": false
+  },
+  {
+    "id": "adf3bb96-f033-42a9-89e3-72ec02fc46c9",
+    "name": "Sam Sung 123",
+    "price": "10",
+    "img": "https://i.pravatar.cc?img=1",
+    "description": "Samsung is a leading global technology company known for its innovative consumer",
+    "type": "aaa",
+    "deleted": false
+  },
+  {
+    "id": "feb19c62-57d8-4d4e-82b7-8203bd80eb67",
+    "name": "samsung 2025",
+    "price": null,
+    "img": "https://i.pravatar.cc/?img=1",
+    "description": "fsafsafasfasfasf",
+    "type": "string",
+    "deleted": false
+  }
+]

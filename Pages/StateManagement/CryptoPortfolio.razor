@@ -1,0 +1,50 @@
+@page "/crypto-portfolio";
+@layout HomeMasterPage
+@inject CryptoService crypSer;
+<div class="container mt-4">
+    <h1 class="mb-4">Crypto Portfolio</h1>
+    <div class="row">
+        <!-- All Cryptocurrencies Section -->
+        <div class="col-md-6">
+            <h4>All Cryptocurrencies</h4>
+            <ul class="list-group">
+                @foreach (Coin item in crypSer.lstAllCoin)
+                {
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <img src="@item.image" alt="..." width="50" />
+                        @item.name <span class="badge bg-primary">$@item.current_price</span>
+                        <button class="btn btn-outline-primary btn-sm" @onclick="(e) => AddCoin(item)">Add to Favorites</button>
+                    </li>
+                }
+
+
+            </ul>
+        </div>
+
+        <div class="col-md-6">
+            <Favorites />
+        </div>
+
+    </div>
+</div>
+
+
+@code {
+
+    protected override async Task OnInitializedAsync()
+    {
+        crypSer.OnChange += StateHasChanged;
+        crypSer.GetAllCoinAsync();
+
+    }
+    public void Dispose()
+    {
+        crypSer.OnChange -= StateHasChanged;
+    }
+
+    public void AddCoin(Coin newItem)
+    {
+        crypSer.AddFavorites(newItem);
+    }
+
+}

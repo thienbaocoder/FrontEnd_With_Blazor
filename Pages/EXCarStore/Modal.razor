@@ -1,0 +1,65 @@
+<!-- Modal trigger button -->
+@* <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+    Launch
+</button> *@
+
+<!-- Modal Body -->
+<!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+<div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+    aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">
+                    @prodDetail.Name
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <h3 class="d-flex justify-content-center align-items-center py-2">THÔNG SỐ KĨ THUẬT</h3>
+                    <div class="col-6">
+                        <img src="@prodDetail.Image" class="w-100">
+                    </div>
+                    <div class="col-6">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Công suất</th>
+                                    <td>283 kW</td>
+                                </tr>
+                                <tr>
+                                    <th>Mô men xoắn cực đại</th>
+                                    <td>450 Nm</td>
+                                </tr>
+                                <tr>
+                                    <th>Tăng tốc từ 0 - 100 km/giờ (0 - 62 dặm/giờ)</th>
+                                    <td>4,2 giây</td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Close
+                </button>
+                <button type="button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional: Place to the bottom of scripts -->
+@* <script>
+    const myModal = new bootstrap.Modal(
+        document.getElementById("modalId"),
+        options,
+    );
+</script> *@
+
+@code {
+    [Parameter]
+    public ProductCarVM prodDetail { get; set; } = new ProductCarVM();
+}

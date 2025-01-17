@@ -1,0 +1,22 @@
+<div class="container">
+    <h3>ProductList</h3>
+    <div class="row">
+        @foreach (ProductCarVM prod in LstProduct)
+        {
+            <div class="col-3">
+                <ProductItem prodProp="prod" eventClickDetail="eventClickDetail" eventClickAdd="eventClickAdd">
+                </ProductItem>
+            </div>
+        }
+
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public List<ProductCarVM> LstProduct { get; set; } = new List<ProductCarVM>();
+    [Parameter]
+    public EventCallback<ProductCarVM> eventClickDetail { get; set; }
+    [Parameter]
+    public EventCallback<CartItemVM> eventClickAdd { get; set; }
+}

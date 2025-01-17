@@ -1,0 +1,13 @@
+<div class="card">
+    <img src="@prod.Image" alt="..." />
+    <div class="card-body">
+        <h2 class="card-title">@prod.Name</h2>
+        <div class="card-text">@prod.Price </div>
+        @* <button class="btn btn-dark">View detail</button> *@
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public ProductCardViewModel prod { get; set; } = new ProductCardViewModel();
+}

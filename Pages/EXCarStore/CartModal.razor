@@ -1,0 +1,94 @@
+@using System.Globalization
+<!-- Modal trigger button -->
+<button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modal-cart">
+    <i class="fa fa-cart-plus"></i>Cart(@lstCartItem.Sum(item => item.Quantity))
+</button>
+<!-- Modal Body -->
+<!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+<div class="modal fade" id="modal-cart" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+    aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">
+                    Cart
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Img</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (CartItemVM item in lstCartItem)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.Name</td>
+                                <td>
+                                    <img src="@item.Image" width="50" height="50" alt="red-car" />
+                                </td>
+                                <td>@item.Price.ToString("N", CultureInfo.GetCultureInfo("en-US"))</td>
+                                <td><input class="form-control" type="number" min="1" value="@item.Quantity"
+                                        @oninput="(e) => UpdateQuantity(item, int.Parse(e.Value.ToString()))"></td>
+                                @{
+                                    double total = item.Price * item.Quantity;
+                                }
+                                <td>@total.ToString("N", CultureInfo.GetCultureInfo("en-US"))</td>
+                                <td>
+                                    <button class="btn btn-danger" @onclick="() => RemoveCartItem(item)">
+                                        <i class="fa fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Close
+                </button>
+                <button type="button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public List<CartItemVM> lstCartItem { get; set; }
+    void RemoveCartItem(CartItemVM item)
+    {
+        CartItemVM targetItem = lstCartItem.Find(x => x.Id == item.Id);
+        if (targetItem != null)
+        {
+            if (targetItem.Quantity > 1)
+            {
+                targetItem.Quantity--;
+            }
+            else
+            {
+                lstCartItem.Remove(targetItem);
+            }
+        }
+    }
+    void UpdateQuantity(CartItemVM item, int newQuantity)
+    {
+        CartItemVM targetItem = lstCartItem.Find(x => x.Id == item.Id);
+        if (targetItem != null)
+        {
+            targetItem.Quantity = newQuantity > 0 ? newQuantity : 1;
+        }
+    }
+
+}

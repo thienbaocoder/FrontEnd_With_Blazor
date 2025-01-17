@@ -1,0 +1,60 @@
+.card {
+    position: relative;
+    overflow: hidden;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 1;
+    }
+
+    &:hover::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%; /* Vị trí đường thẳng ở giữa */
+        width: 2px; /* Độ dày của đường thẳng */
+        background-color: red; /* Màu của đường thẳng */
+        z-index: 2;
+        transform: scaleY(0); /* Bắt đầu từ không có gì */
+        transform-origin: top;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover::before {
+        transform: scaleY(1); /* Hiển thị toàn bộ chiều dọc */
+    }
+}
+.card {
+    position: relative;
+    overflow: hidden;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 1;
+    }
+
+    &:hover::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%; /* Vị trí đường thẳng ở giữa */
+        width: 2px; /* Độ dày của đường thẳng */
+        background-color: red; /* Màu của đường thẳng */
+        z-index: 2;
+        transform: scaleY(0); /* Bắt đầu từ không có gì */
+        transform-origin: top;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover::before {
+        transform: scaleY(1); /* Hiển thị toàn bộ chiều dọc */
+    }
+}

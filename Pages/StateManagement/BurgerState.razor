@@ -1,0 +1,79 @@
+@page "/burger-state"
+@layout HomeMasterPage
+@inject BurgerService burgerSer;
+<link rel="stylesheet" href="css/burger.css">
+<div class="container">
+    <h1>Bài tập Cybersoft Burger</h1>
+    <div class="row">
+        <div class="col-6">
+            <h3>Bánh burger của bạn</h3>
+            <div class="breadTop"></div>
+            @foreach (IngredientModel item in burgerSer.lstIngre)
+            {
+                for (int i = 0; i < item.Quantity; i++)
+                {
+                    <div class="@item.Name"></div>
+                }
+            }
+            @* <div class="cheese"></div>
+            <div class="beef"></div> *@
+            <div class="breadBottom"></div>
+        </div>
+        <div class="col-6">
+            <h3>Chọn thức ăn</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Thức ăn</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th>Đơn giá</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        double total = 0;
+                    }
+                    @foreach (IngredientModel item in burgerSer.lstIngre)
+                    {
+                        double totalitem = (double)(item.Quantity) * item.UnitPrice;
+                        total += totalitem;
+                        <tr>
+                            <td>@item.Name</td>
+                            <td><button class="btn btn-danger" @onclick="(e) => RemoveIngredient(item.Name)">-</button></td>
+                            <td class="px-3">@item.Quantity</td>
+                            <td><button class="btn btn-success" @onclick="(e) => AddIngredient(item.Name)">+</button></td>
+                            <td>@item.UnitPrice</td>
+                            <td>@totalitem</td>
+                        </tr>
+                    }
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th>Tổng cộng</th>
+                        <th>@total</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+</div>
+
+
+@code {
+
+    public void AddIngredient(string name)
+    {
+        burgerSer.AddIngredient(name);
+    }
+    public void RemoveIngredient(string name)
+    {
+        burgerSer.RemoveIngredient(name);
+    }
+}

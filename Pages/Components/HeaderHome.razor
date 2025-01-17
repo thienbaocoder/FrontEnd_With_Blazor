@@ -1,0 +1,75 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">CyberSoft Blazor</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+    <div class="collapse navbar-collapse align-items-center mt-3" id="collapsibleNavId">
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0 ">
+            <li class="nav-item">
+                <NavLink ActiveClass="active-link" class="nav-link" href="/" Match="NavLinkMatch.All"
+                    aria-current="page">Home</NavLink>
+            </li>
+            <li class="nav-item">
+                <NavLink ActiveClass="active-link" class="nav-link" href="/login" Match="NavLinkMatch.All">Login
+                </NavLink>
+            </li>
+            <li class="nav-item">
+                <NavLink ActiveClass="active-link" class="nav-link" href="/form-validation" Match="NavLinkMatch.All">
+                    form-validation</NavLink>
+            </li>
+            <li class="nav-item">
+                <NavLink ActiveClass="active-link" class="nav-link" href="/component-param" Match="NavLinkMatch.All">
+                    component with param</NavLink>
+            </li>
+            <li class="nav-item">
+                <NavLink ActiveClass="active-link" class="nav-link" href="/product-detail" Match="NavLinkMatch.All">
+                    Param Event Callback</NavLink>
+            </li>
+            <li class="nav-item">
+                <NavLink ActiveClass="active-link" class="nav-link" href="/ex-carstore" Match="NavLinkMatch.All">
+                    Exercise car store</NavLink>
+            </li>
+            <li class="nav-item">
+                <NavLink ActiveClass="active-link" class="nav-link" href="/ref-demo" Match="NavLinkMatch.All">
+                    Ref Demo</NavLink>
+            </li>
+            <li class="nav-item">
+                <NavLink ActiveClass="active-link" class="nav-link" href="/jsblazor" Match="NavLinkMatch.All">
+                    JSBlazor</NavLink>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Databinding</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <NavLink class="dropdown-item" href="/oneway-binding">Oneway-binding</NavLink>
+                    <NavLink class="dropdown-item" href="/handle-event">handle-event</NavLink>
+                    <NavLink class="dropdown-item" href="/two-way-binding">TwoWay_Binding</NavLink>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">LifeCycle</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <NavLink class="dropdown-item" href="/demo-oninit">OnInit</NavLink>
+                    <NavLink class="dropdown-item" href="/detail/9991">OnSetParameter</NavLink>
+                    <NavLink class="dropdown-item" href="/lifecycle-render">lifecycle render</NavLink>
+                    <NavLink class="dropdown-item" href="/dispose-demo">Dispose</NavLink>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">State Management</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <NavLink class="dropdown-item" href="/demo-service-count">Demo Count</NavLink>
+                    <NavLink class="dropdown-item" href="/crypto-portfolio">Crypto Portfolio</NavLink>
+                    <NavLink class="dropdown-item" href="/burger-state">Burger State</NavLink>
+                </div>
+            </li>
+        </ul>
+        <form class="d-flex my-2 my-lg-0">
+            <input class="form-control me-sm-2" type="text" placeholder="Search" />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                Search
+            </button>
+        </form>
+    </div>
+</nav>

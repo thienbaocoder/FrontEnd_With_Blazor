@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "node-sass": "^9.0.0",
+    "sass": "^1.83.1",
+    "sass-loader": "^16.0.4"
+  },
+  "scripts": {
+    "build-sass": "sass wwwroot/scss/index.scss:wwwroot/css/index.css",
+    "watch-sass": "sass --watch wwwroot/scss/index.scss:wwwroot/css/index.css"
+  }
+}

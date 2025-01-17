@@ -1,0 +1,58 @@
+@page "/lifecycle-render"
+@layout HomeMasterPage
+
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <h3>Parent Component</h3>
+            <div class="card p-3">
+                <h3 class="card-title">Static card</h3>
+                <p class="card-text">Fixed infomation</p>
+                <p>This is Static card that does not change</p>
+            </div>
+        </div>
+        <div class="col-8">
+            <h3>Dynamic notification list</h3>
+            <div class="rounded border border-default">
+                <NotifyList lstNotify="@lstNotify" />
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group my-2">
+        <div class="input-group">
+            <input class="form-control d-inline" value="@newNotify" @oninput="handleChange" />
+            <button class="btn btn-success" @onclick="handleAddNotify">Add notify</button>
+        </div>
+    </div>
+
+
+    <button class="btn btn-dark" @onclick="ChangeCount">Render (@count)</button>
+</div>
+
+
+
+@code {
+    public int count { get; set; } = 1;
+    public string newNotify { get; set; } = "";
+    List<string> lstNotify = new List<string>()
+{
+"thông báo 1", "thông báo 2", "thông báo 3"
+};
+    void handleChange(ChangeEventArgs e)
+    {
+        newNotify = e.Value.ToString();
+    }
+    void handleAddNotify()
+    {
+        lstNotify.Add(newNotify);
+    }
+    void ChangeCount()
+    {
+        count += 1;
+    }
+    protected override void OnAfterRender(bool firstRender)
+    {
+        Console.WriteLine($"Component render, first render: {firstRender}");
+    }
+}

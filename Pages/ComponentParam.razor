@@ -1,0 +1,46 @@
+@page "/component-param"
+@layout HomeMasterPage
+
+<div class="container">
+    <h3>component width parametter</h3>
+    <div class="row">
+        @foreach (ProductCardViewModel item in lstProduct)
+        {
+            <div class="col-4 mt-2">
+                <CardItem prod="@item" />
+                <button @onclick="@(e => ViewDetail(item))" class="btn btn-dark" data-bs-toggle="modal"
+                    data-bs-target="#modalId">Detail</button>
+            </div>
+        }
+    </div>
+    <PopupModel contentBody="abc">
+        <div class="text text-danger">@prodNameDetail</div>
+    </PopupModel>
+</div>
+
+<button @onclick="handleClick">Add product</button>
+
+@code {
+    public string prodNameDetail { get; set; } = "prod1";
+    List<ProductCardViewModel> lstProduct = new List<ProductCardViewModel>(){
+new ProductCardViewModel () {Id="1",Name="Iphone",Price="1000", Image="https://picsum.photos/id/1/200/200"},
+new ProductCardViewModel () {Id="2",Name="Iphone Pro",Price="2000", Image="https://picsum.photos/id/2/200/200"},
+new ProductCardViewModel () {Id="3",Name="Iphone Pro Max",Price="3000", Image="https://picsum.photos/id/3/200/200"},
+};
+
+    void handleClick()
+    {
+        lstProduct.Add(new ProductCardViewModel()
+            {
+                Id = "4",
+                Name = "Iphone Pro Max 123",
+                Price = "3000",
+                Image = "https://picsum.photos/id/3/200/200"
+            }
+        );
+    }
+    void ViewDetail(ProductCardViewModel prodDetail)
+    {
+        prodNameDetail = prodDetail.Name;
+    }
+}

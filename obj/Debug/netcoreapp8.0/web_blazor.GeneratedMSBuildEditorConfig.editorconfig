@@ -1,0 +1,179 @@
+is_global = true
+build_property.TargetFramework = netcoreapp8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = web_blazor
+build_property.RootNamespace = web_blazor
+build_property.ProjectDir = C:\Users\PC\OneDrive\Documents\Downloads\dotnet01-master\dotnet01-master\web_blazor\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\PC\OneDrive\Documents\Downloads\dotnet01-master\dotnet01-master\web_blazor
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/AddNewProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkTmV3UHJvZHVjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/CateProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZVByb2R1Y3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/ComponentParam.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50UGFyYW0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/Components/CardItem.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xDYXJkSXRlbS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/Components/HeaderHome.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xIZWFkZXJIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/Components/PopupModel.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xQb3B1cE1vZGVsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/DataBinding.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGF0YUJpbmRpbmcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/EXCarStore/CartModal.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVhDYXJTdG9yZVxDYXJ0TW9kYWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/EXCarStore/EXCarStore.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVhDYXJTdG9yZVxFWENhclN0b3JlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/EXCarStore/Modal.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVhDYXJTdG9yZVxNb2RhbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/EXCarStore/ProductList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVhDYXJTdG9yZVxQcm9kdWN0TGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/FormValidation.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybVZhbGlkYXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/HandleEvent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSGFuZGxlRXZlbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/JSRazor/JSBlazor.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSlNSYXpvclxKU0JsYXpvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/LifeCycle/Disponse/DisponseDemo.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlmZUN5Y2xlXERpc3BvbnNlXERpc3BvbnNlRGVtby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/LifeCycle/LifeCycleRender/NotifyList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlmZUN5Y2xlXExpZmVDeWNsZVJlbmRlclxOb3RpZnlMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/LifeCycle/LifeCycleRender/ParentComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlmZUN5Y2xlXExpZmVDeWNsZVJlbmRlclxQYXJlbnRDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/LifeCycle/Oninit/DemoOninit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlmZUN5Y2xlXE9uaW5pdFxEZW1vT25pbml0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/LifeCycle/SetParameters/ProductDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlmZUN5Y2xlXFNldFBhcmFtZXRlcnNcUHJvZHVjdERldGFpbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/ParamEventCallback/ProductCard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFyYW1FdmVudENhbGxiYWNrXFByb2R1Y3RDYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/ParamEventCallback/ProductDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFyYW1FdmVudENhbGxiYWNrXFByb2R1Y3REZXRhaWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/ProductDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdERldGFpbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/RefDemo/PersonCard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVmRGVtb1xQZXJzb25DYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/RefDemo/RefDemo.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVmRGVtb1xSZWZEZW1vLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/Search.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhcmNoLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/StateManagement/BurgerState.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhdGVNYW5hZ2VtZW50XEJ1cmdlclN0YXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/StateManagement/ButtonCount.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhdGVNYW5hZ2VtZW50XEJ1dHRvbkNvdW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/StateManagement/CountPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhdGVNYW5hZ2VtZW50XENvdW50UGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/StateManagement/CryptoPortfolio.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhdGVNYW5hZ2VtZW50XENyeXB0b1BvcnRmb2xpby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/StateManagement/Favorites.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhdGVNYW5hZ2VtZW50XEZhdm9yaXRlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/TwoWayBinding.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHdvV2F5QmluZGluZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Shared/AdminMasterPage.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEFkbWluTWFzdGVyUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Shared/HomeMasterPage.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEhvbWVNYXN0ZXJQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/EXCarStore/ProductItem.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVhDYXJTdG9yZVxQcm9kdWN0SXRlbS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-psxka1e6dv
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

@@ -1,0 +1,59 @@
+@page "/detail-product/{id}"
+@layout HomeMasterPage
+@inject ProductService prodService;
+@{
+    ProductDetailVM prodDetail = prodService.prodDetail;
+}
+
+<div class="container">
+    <h3>Product detail </h3>
+    <div class="row">
+        <div class="col-4">
+            <img src="@prodDetail.Image" alt="@prodDetail.Image" class="w-100" />
+        </div>
+        <div class="col-8">
+            <h3>@prodDetail.Name</h3>
+            <p>@prodDetail.Price</p>
+            <p>@(new MarkupString(prodDetail.Description))</p>
+            <button class="btn btn-success">
+                <i class="fa fa-cart-plus"></i>
+                Add to cart
+            </button>
+        </div>
+    </div>
+    <h3>RelatedProduct</h3>
+    <div class="row mt-5">
+        @* @foreach (ProductModel prod in lstProduct)
+        {
+            <div class="col-4 mt-2">
+                <div class="card">
+                    <img src="https://i.pravatar.cc?u=@prod.id" alt="..." class="w-100" />
+                    <div class="card-body">
+                        <h3 class="card-title">@prod.name - @prod.id</h3>
+                        <div class="card-text">
+                            @prod.price
+
+                        </div>
+                        <a href="/detail/@prod.id" class="btn btn-dark">Detail</a>
+                    </div>
+                </div>
+            </div>
+        } *@
+    </div>
+</div>
+@code {
+
+    [Parameter]
+    public string id { get; set; } = "";
+    protected override async Task OnParametersSetAsync()
+    {
+        prodService.OnChange += StateHasChanged;
+        //Gọi api get detail by id 
+        prodService.GetProductByIdApi(id);
+    }
+
+    public void Dispose(){
+        prodService.OnChange -= StateHasChanged;
+    }
+
+}

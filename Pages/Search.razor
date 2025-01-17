@@ -1,0 +1,65 @@
+@page "/search"
+@layout HomeMasterPage
+@inject NavigationManager Nav
+@inject ProductService prdService
+<div class="container">
+    <h3>Search product</h3>
+    <div class="input-group">
+        <input class="form-control" id="search" bind-Value="keyword" @oninput="(e)=>handleChange(e)" />
+        <button class="btn btn-success">Search</button>
+    </div>
+
+    <div class="search-result mt-2">
+        <div class="row">
+            @foreach (ProductVM prod in prdService.lstProductSearch.Skip(0).Take(15))
+            {
+                <div class="col-md-3 mt-2">
+                    <div class="card">
+                        <img src="@prod.Image" alt="..." />
+                        <div class="card-body">
+                            <h2 class="card-title">@prod.Name</h2>
+                            <p class="card-text">@prod.Price</p>
+                            <a href="/detail-product/@prod.Id" class="btn btn-dark">Detail</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+</div>
+
+@code {
+    public string keyword { get; set; } = "";
+    public void handleChange(ChangeEventArgs e)
+    {
+        keyword = e.Value.ToString();
+        Nav.NavigateTo($"/search?k={keyword}&abc=1");
+        GetProductByKeyWord();
+    }
+    
+    public async Task GetProductByKeyWord() {
+         //Mỗi lần url thay đổi => chạy hàm này
+        var uri = new Uri(Nav.Uri); // Nav.Uri = https://localhost:5001/search?k=dsajldjaljdlksajldsa
+        var query = QueryHelpers.ParseQuery(uri.Query);
+        /*
+        {"key1":value1, "key2":"value2"}
+        */
+        //Tham số sau dấu ?
+        string k = query.GetValueOrDefault("k");
+        string param2 = query.GetValueOrDefault("abc");
+        //Gọi api search product
+        prdService.GetAllProductByKeywordApi(k);
+    }
+    protected override async Task OnParametersSetAsync()
+    {   
+        //Hàm xử lý khi người dùng link = url
+        prdService.OnChange += StateHasChanged;
+        GetProductByKeyWord();
+       
+    }
+    public void Dispose()
+    {
+        prdService.OnChange -= StateHasChanged;
+    }
+}
