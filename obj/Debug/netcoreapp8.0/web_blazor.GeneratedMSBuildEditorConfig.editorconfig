@@ -17,6 +17,8 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\PC\OneDrive\Documents\Downloads\dotnet01-master\dotnet01-master\web_blazor
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
 
 [C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
@@ -102,6 +104,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlmZUN5Y2xlXFNldFBhcmFtZXRlcnNcUHJvZHVjdERldGFpbC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/ListStore.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdFN0b3JlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -154,8 +160,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhdGVNYW5hZ2VtZW50XEZhdm9yaXRlcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/Store.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RvcmUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/TwoWayBinding.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHdvV2F5QmluZGluZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/UpdateProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXBkYXRlUHJvZHVjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/UpdateStore.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXBkYXRlU3RvcmUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Shared/AdminMasterPage.razor]

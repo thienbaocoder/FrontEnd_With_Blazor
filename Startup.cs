@@ -41,6 +41,7 @@ namespace web_blazor
             services.AddScoped<CryptoService>();
             services.AddScoped<BurgerService>();
             services.AddScoped<ProductService>();
+            services.AddScoped<StoreService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

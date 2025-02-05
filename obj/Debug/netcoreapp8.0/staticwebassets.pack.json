@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\PC\\OneDrive\\Documents\\Downloads\\dotnet01-master\\dotnet01-master\\web_blazor\\obj\\Debug\\netcoreapp8.0\\scopedcss\\projectbundle\\web_blazor.bundle.scp.css",
-      "PackagePath": "staticwebassets\\web_blazor.bundle.scp.css"
+      "PackagePath": "staticwebassets\\web_blazor.lc4p49uyzu.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\PC\\OneDrive\\Documents\\Downloads\\dotnet01-master\\dotnet01-master\\web_blazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
@@ -99,6 +99,10 @@
     {
       "Id": "obj\\Debug\\netcoreapp8.0\\staticwebassets\\msbuild.buildTransitive.web_blazor.props",
       "PackagePath": "buildTransitive\\web_blazor.props"
+    },
+    {
+      "Id": "obj\\Debug\\netcoreapp8.0\\staticwebassets\\msbuild.web_blazor.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\netcoreapp8.0\\staticwebassets\\msbuild.web_blazor.Microsoft.AspNetCore.StaticWebAssets.props",

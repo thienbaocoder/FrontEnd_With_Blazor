@@ -1,0 +1,91 @@
+@page "/store"
+@layout HomeMasterPage
+@using System.ComponentModel.DataAnnotations
+@using Microsoft.AspNetCore.Components.Forms
+@using System.Text.Json
+
+@inject StoreService storeService
+@inject NavigationManager Navigation
+
+<div class="container">
+    <h2 class="mb-4">Create New Store VM</h2>
+    <EditForm Model="@store" OnValidSubmit="HandleValidSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="mb-3">
+            <label for="name" class="form-label">Tên Cửa Hàng</label>
+            <InputText id="name" class="form-control" @bind-Value="store.Name" />
+            <ValidationMessage For="@(() => store.Name)" />
+        </div>
+
+        <div class="mb-3">
+            <label for="alias" class="form-label">Alias</label>
+            <InputText id="alias" class="form-control" @bind-Value="store.Alias" />
+            <ValidationMessage For="@(() => store.Alias)" />
+        </div>
+
+        <div class="mb-3">
+            <label for="latitude" class="form-label">Vĩ độ (Latitude)</label>
+            <InputText id="latitude" class="form-control" @bind-Value="store.Latitude" />
+            <ValidationMessage For="@(() => store.Latitude)" />
+        </div>
+
+        <div class="mb-3">
+            <label for="longtitude" class="form-label">Kinh độ (Longtitude)</label>
+            <InputText id="longtitude" class="form-control" @bind-Value="store.Longtitude" />
+            <ValidationMessage For="@(() => store.Longtitude)" />
+        </div>
+
+        <div class="mb-3">
+            <label for="description" class="form-label">Mô Tả</label>
+            <InputTextArea id="description" class="form-control" @bind-Value="store.Description" />
+            <ValidationMessage For="@(() => store.Description)" />
+        </div>
+
+        <div class="mb-3">
+            <label for="image" class="form-label">Đường Dẫn Ảnh</label>
+            <InputText id="image" class="form-control" @bind-Value="store.Image" />
+            <ValidationMessage For="@(() => store.Image)" />
+        </div>
+
+        <div class="form-check mb-3">
+            <InputCheckbox id="deleted" class="form-check-input" @bind-Value="store.Deleted" />
+            <label for="deleted" class="form-check-label">Đã Xóa</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-secondary ms-2" @onclick="Cancel">Cancel</button>
+    </EditForm>
+
+    @if (!string.IsNullOrEmpty(res))
+    {
+        <div class="alert alert-danger mt-3">@res</div>
+    }
+</div>
+
+@code {
+    private StoreAddNew store = new StoreAddNew();
+    private string res { get; set; } = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        storeService.OnChange += StateHasChanged;
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        res = await storeService.AddNewStore(store);
+        StateHasChanged();
+    }
+
+    public void Dispose()
+    {
+        storeService.OnChange -= StateHasChanged;
+    }
+
+    private void Cancel()
+    {
+        Navigation.NavigateTo("/");
+    }
+}

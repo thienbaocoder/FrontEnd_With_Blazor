@@ -17,14 +17,22 @@
                         <a href="/detail-product/@item.Id" class="btn btn-dark">
                             View detail
                         </a>
+                        <button @onclick="e => deleteProduct(item.Id.ToString())" class="btn btn-danger">Delete</button>
                     </div>
                 </div>
             </div>
         }
     </div>
+    <div class="mt-2 alert alert-success">@res</div>
 </div>
 
 @code {
+    public string res = "";
+    public async void deleteProduct(string id)
+    {
+        res = await prdService.DeleteProductByIdApi(id);
+        StateHasChanged();
+    }
 
     protected override async Task OnInitializedAsync()
     {

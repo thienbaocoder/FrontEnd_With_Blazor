@@ -67,3 +67,7 @@ C:\Users\PC\OneDrive\Documents\Downloads\dotnet01-master\dotnet01-master\web_bla
 C:\Users\PC\OneDrive\Documents\Downloads\dotnet01-master\dotnet01-master\web_blazor\bin\Debug\netcoreapp8.0\data.json
 C:\Users\PC\OneDrive\Documents\Downloads\dotnet01-master\dotnet01-master\web_blazor\bin\Debug\netcoreapp8.0\package-lock.json
 C:\Users\PC\OneDrive\Documents\Downloads\dotnet01-master\dotnet01-master\web_blazor\bin\Debug\netcoreapp8.0\package.json
+C:\Users\PC\OneDrive\Documents\Downloads\dotnet01-master\dotnet01-master\web_blazor\bin\Debug\netcoreapp8.0\web_blazor.staticwebassets.endpoints.json
+C:\Users\PC\OneDrive\Documents\Downloads\dotnet01-master\dotnet01-master\web_blazor\obj\Debug\netcoreapp8.0\web_blazor.sourcelink.json
+C:\Users\PC\OneDrive\Documents\Downloads\dotnet01-master\dotnet01-master\web_blazor\obj\Debug\netcoreapp8.0\staticwebassets.build.endpoints.json
+C:\Users\PC\OneDrive\Documents\Downloads\dotnet01-master\dotnet01-master\web_blazor\obj\Debug\netcoreapp8.0\staticwebassets\msbuild.web_blazor.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
