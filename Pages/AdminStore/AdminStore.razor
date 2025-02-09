@@ -1,0 +1,52 @@
+@page "/admin/{adminAction}"
+@layout AdminMasterPage
+
+<style>
+    .link-hover:hover,
+    .link-hover:focus {
+        color: var(--bs-primary) !important;
+    }
+</style>
+
+<div class="container">
+    <h3>/admin/@adminAction</h3>
+    <a href="/admin/product-management" class="text-dark text-decoration-none link-hover"
+        @onclick="ToggleProductManagement">Product Management</a>
+    <span>/</span>
+    <a href="/admin/add-product" class="text-dark text-decoration-none link-hover" @onclick="ToggleAddProduct">Add
+        Product</a>
+    @if (showProductManagement)
+    {
+        <div class="mt-2">
+            <ProductManagement />
+        </div>
+    }
+    @if (showAddProduct)
+    {
+        <div class="mt-2">
+            <p>Thêm sản phẩm mới vào cửa hàng của bạn.</p>
+            <AdminAddNew />
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public string adminAction { get; set; }
+    private bool showProductManagement = true;
+    private bool showAddProduct = false;
+
+    private void ToggleProductManagement()
+    {
+        showProductManagement = !showProductManagement;
+        showAddProduct = false;
+        StateHasChanged();
+    }
+
+    private void ToggleAddProduct()
+    {
+        showAddProduct = !showAddProduct;
+        showProductManagement = false;
+        StateHasChanged();
+    }
+}

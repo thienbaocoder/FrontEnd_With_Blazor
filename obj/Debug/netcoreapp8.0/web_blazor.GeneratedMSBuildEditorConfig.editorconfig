@@ -28,6 +28,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkTmV3UHJvZHVjdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/AdminStore/AdminAddNew.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5TdG9yZVxBZG1pbkFkZE5ldy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/AdminStore/AdminStore.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5TdG9yZVxBZG1pblN0b3JlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/AdminStore/ProductManagement.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5TdG9yZVxQcm9kdWN0TWFuYWdlbWVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/CateProduct.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZVByb2R1Y3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -40,6 +52,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xDYXJkSXRlbS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/Components/HeaderAdmin.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xIZWFkZXJBZG1pbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/Components/HeaderHome.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xIZWFkZXJIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -50,6 +66,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/DataBinding.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGF0YUJpbmRpbmcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/DemoSignalR/ChatRoom.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVtb1NpZ25hbFJcQ2hhdFJvb20ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/PC/OneDrive/Documents/Downloads/dotnet01-master/dotnet01-master/web_blazor/Pages/EXCarStore/CartModal.razor]

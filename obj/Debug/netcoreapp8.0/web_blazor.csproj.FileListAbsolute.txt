@@ -71,3 +71,12 @@ C:\Users\PC\OneDrive\Documents\Downloads\dotnet01-master\dotnet01-master\web_bla
 C:\Users\PC\OneDrive\Documents\Downloads\dotnet01-master\dotnet01-master\web_blazor\obj\Debug\netcoreapp8.0\web_blazor.sourcelink.json
 C:\Users\PC\OneDrive\Documents\Downloads\dotnet01-master\dotnet01-master\web_blazor\obj\Debug\netcoreapp8.0\staticwebassets.build.endpoints.json
 C:\Users\PC\OneDrive\Documents\Downloads\dotnet01-master\dotnet01-master\web_blazor\obj\Debug\netcoreapp8.0\staticwebassets\msbuild.web_blazor.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\PC\OneDrive\Documents\Downloads\dotnet01-master\dotnet01-master\web_blazor\bin\Debug\netcoreapp8.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\PC\OneDrive\Documents\Downloads\dotnet01-master\dotnet01-master\web_blazor\bin\Debug\netcoreapp8.0\Microsoft.AspNetCore.Http.Connections.Client.dll
+C:\Users\PC\OneDrive\Documents\Downloads\dotnet01-master\dotnet01-master\web_blazor\bin\Debug\netcoreapp8.0\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\Users\PC\OneDrive\Documents\Downloads\dotnet01-master\dotnet01-master\web_blazor\bin\Debug\netcoreapp8.0\Microsoft.AspNetCore.SignalR.Client.dll
+C:\Users\PC\OneDrive\Documents\Downloads\dotnet01-master\dotnet01-master\web_blazor\bin\Debug\netcoreapp8.0\Microsoft.AspNetCore.SignalR.Client.Core.dll
+C:\Users\PC\OneDrive\Documents\Downloads\dotnet01-master\dotnet01-master\web_blazor\bin\Debug\netcoreapp8.0\Microsoft.AspNetCore.SignalR.Common.dll
+C:\Users\PC\OneDrive\Documents\Downloads\dotnet01-master\dotnet01-master\web_blazor\bin\Debug\netcoreapp8.0\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:\Users\PC\OneDrive\Documents\Downloads\dotnet01-master\dotnet01-master\web_blazor\bin\Debug\netcoreapp8.0\Microsoft.Extensions.Features.dll
+C:\Users\PC\OneDrive\Documents\Downloads\dotnet01-master\dotnet01-master\web_blazor\bin\Debug\netcoreapp8.0\Microsoft.Extensions.Options.dll

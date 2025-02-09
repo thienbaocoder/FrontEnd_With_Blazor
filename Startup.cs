@@ -42,6 +42,10 @@ namespace web_blazor
             services.AddScoped<BurgerService>();
             services.AddScoped<ProductService>();
             services.AddScoped<StoreService>();
+            services.AddScoped<RoomService>();
+
+            //add service signal r
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -62,9 +66,10 @@ namespace web_blazor
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            //setup đường dẫn api hub cho ứng dụng
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapHub<RoomHubs>("/room-hub");
                 endpoints.MapBlazorHub();
                 endpoints.MapFallbackToPage("/_Host");
             });
