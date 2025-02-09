@@ -27,7 +27,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (ProductVM item in prodService.lstProduct)
+            @foreach (ProductVM item in lstProd)
             {
                 <tr>
                     <td>@item.Id</td>
@@ -47,6 +47,8 @@
 </div>
 
 @code {
+    HubConnection RoomHub;
+    List<ProductVM> lstProd = new List<ProductVM>();
     private bool showAddProduct = false;
     private void ToggleAddProduct()
     {
@@ -55,13 +57,20 @@
     }
     protected override async Task OnInitializedAsync()
     {
-        prodService.OnChange += StateHasChanged;
-        prodService.GetAllProductApi();
+        RoomHub = new HubConnectionBuilder()
+        .WithUrl(Nav.ToAbsoluteUri("/room-hub"))
+        .Build();
+        await RoomHub.StartAsync();
+        RoomHub.On<List<ProductVM>>("GetAllProduct", async (lstProd) =>
+        {
+            this.lstProd = lstProd;
+            await InvokeAsync(StateHasChanged);
+        });
     }
 
     public void Dispose()
     {
-        prodService.OnChange -= StateHasChanged;
+        RoomHub.StopAsync();
 
     }
 }

@@ -21,7 +21,7 @@ public class ProductService
     {
         _httpClient = http;
     }
-    public async void GetAllProductApi()
+    public async Task GetAllProductApi()
     {
         // URL gốc của API
         var url = "https://apistore.cybersoft.edu.vn/api/Product";
